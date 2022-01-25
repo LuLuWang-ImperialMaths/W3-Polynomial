@@ -42,7 +42,7 @@ class Polynomial:
 
     def __add__(self, other): # called by '+' or '.__add__()'
 
-        if isinstance(other, Polynomial):
+        if isinstance(other, Polynomial): # if 'other' is in the class of Polynomial
 
             common = min(self.degree(), other.degree()) + 1  # num of common terms of 2 polys
 
